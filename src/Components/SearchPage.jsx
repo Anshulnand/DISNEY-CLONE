@@ -4,7 +4,7 @@ import { MovieContext } from "./Context/MovieContext";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import LazyLoad from "react-lazy-load";
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
-const API_KEY = "YOUR_TMDB_API_KEY"; // Replace with your actual API key
+const API_KEY = "839ef7ce42ba3364f1b22af07a60ecb7"; // Replace with your actual API key
 const SearchPage = () => {
   const searchitem = useRef();
   const { allMovies } = useContext(MovieContext);
@@ -30,7 +30,7 @@ const SearchPage = () => {
         "https://api.themoviedb.org/3/search/movie",
         {
           params: {
-            api_key: '839ef7ce42ba3364f1b22af07a60ecb7' ,
+            api_key: API_KEY ,
             query: query,
           },
         }
